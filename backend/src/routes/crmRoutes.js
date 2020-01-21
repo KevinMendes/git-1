@@ -1,11 +1,11 @@
 const routes = (app) => {
     app.route('/contact')
         .get((req, res, next) => {
-            //middleware
-            console.log(` request de ${req.originalUrl}`)
-            console.log(` request type : ${req.method}`)
-            next()
-        }, (req, res, next) => {
+        //     //middleware
+        //     console.log(` request de ${req.originalUrl}`)
+        //     console.log(` request type : ${req.method}`)
+        //     next()
+        // }, (req, res, next) => {
             res.send('Le GET est fait');
         })
             
